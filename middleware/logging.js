@@ -4,7 +4,7 @@
 module.exports = function(req, res, next) {
   console.log(`request path: ${req.url}`);
 
-  res.on("finish", () => {
+  res.on('finish', () => {
     console.info(`response: ${res.statusCode} ${res.statusMessage}`);
   });
   next();

@@ -1,4 +1,4 @@
-var _ = require("lodash");
+var _ = require('lodash');
 
 /**
  * Example for request and response body mutation will integrate with code later
@@ -10,4 +10,4 @@ var convertEmployeeObj = (object, config) => {
   }
 };
 
-module.exports = { convertEmployeeObj };
+module.exports = {convertEmployeeObj};

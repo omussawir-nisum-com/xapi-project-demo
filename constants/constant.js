@@ -1,1 +1,1 @@
-module.exports = employeeUrl = "http://dummy.restapiexample.com";
+module.exports = employeeUrl = 'http://dummy.restapiexample.com';

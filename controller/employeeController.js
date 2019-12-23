@@ -1,5 +1,5 @@
-const employeeService = require("../service/employeeService");
-const employeeBaseURL = require("../constants/constant");
+const employeeService = require('../service/employeeService');
+const employeeBaseURL = require('../constants/constant');
 
 var getEmployees = async (req, res) => {
   let employeeURL = getEmployeeUrl(req);
@@ -41,4 +41,4 @@ var getEmployeeUrl = req => {
   return `${employeeBaseURL}${req.originalUrl}`;
 };
 
-module.exports = { getEmployees, getEmployeesById, saveEmployee };
+module.exports = {getEmployees, getEmployeesById, saveEmployee};
