@@ -3,10 +3,12 @@ const bagRoute = require("./routes/bagRouter");
 const employeeRoute = require("./routes/employeeRouter");
 const express = require("express");
 const logger = require("./middleware/logging");
+const transformer = require("./middleware/modelTranformer");
 const app = express();
 
 app.use(express.json());
 app.use(logger);
+app.use(transformer);
 
 //use users route for api/users
 app.use("/api/users", usersRoute);
